@@ -28,7 +28,6 @@
         $real_name = $_POST["real_name"];
         $short_bio = $_POST["short_bio"];
         $long_bio = $_POST["long_bio"];
-
         $query = "INSERT INTO heroes_table(hero_name, real_name, short_bio, long_bio, image) VALUES ('$hero_name', '$real_name', '$short_bio', '$long_bio', '$imageNewName')";
 
         if(mysqli_query($connection,  $query)) {

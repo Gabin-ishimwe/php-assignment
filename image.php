@@ -23,9 +23,8 @@
 
         $imageExt = explode(".", $imageName);
         $imageActualExt = strtolower(end($imageExt));
-        
+    
         $fileExt = array("jpg", "jpeg", "png");
-
         if(in_array($imageActualExt, $fileExt)) {
             if($imageError === 0) {
                 if($imageSize < 1000000) {
