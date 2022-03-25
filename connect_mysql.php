@@ -12,9 +12,10 @@
     $dbUser = "root";
     $dbPassword = "root123";
     $dbname = "heroes";
-
+    //Connecting to the database 
     $connection = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbname);
-
+    
+    //Checking to see if the database has been connected successful. 
     if($connection) {
         // echo "database connected";
     }
