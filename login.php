@@ -25,7 +25,7 @@
             $_SESSION['username'] = $username;
 
             // Redirect to user dashboard page
-            header("Location: read.php");
+            header("Location: display.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>

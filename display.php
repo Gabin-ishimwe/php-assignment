@@ -136,9 +136,9 @@ h2{
         
         <div class="menu">
         <li><a href="./main.php">Add hero</a></li>
-        <li><a href="./login.html">Log in</a></li>
+        <li><a href="./login.php">Log in</a></li>
         <li class="nav">
-        <a href="./signup.html">Sign up</a>
+        <a href="./signup.php">Sign up</a>
         
         <ul class="dropdown">
         <li><a href="/">Dropdown 1 </a></li>
