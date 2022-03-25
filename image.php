@@ -27,7 +27,7 @@
         $fileExt = array("jpg", "jpeg", "png");
         if(in_array($imageActualExt, $fileExt)) {
             if($imageError === 0) {
-                if($imageSize < 1000000) {
+                if($imageSize < 10000000) {
                     $imageNewName = uniqid("IMG-", true). ".". $imageActualExt;
                     $imageDestination = "uploads/".$imageNewName;
                     move_uploaded_file($imagetmpname, $imageDestination);
