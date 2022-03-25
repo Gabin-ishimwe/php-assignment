@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    // enctype helps to submit the form to the server.
     <form action="insert.php" method="post" enctype="multipart/form-data">
         <!-- id <input type="number" name="id"><br><br> -->
         hero name <input type="text" name="hero_name"><br><br>
@@ -19,17 +20,21 @@
     </form>
 
     <?php
+    //importing other php files 
     include "connect_mysql.php";
     include "image.php";
     
+    //Checking whether any information has been submitted.
     if(isset($_POST["submit"])) {
         // $id = $_POST["id"];
         $hero_name = $_POST["hero_name"];
         $real_name = $_POST["real_name"];
         $short_bio = $_POST["short_bio"];
         $long_bio = $_POST["long_bio"];
+        // Inserting the values from the form into the database
         $query = "INSERT INTO heroes_table(hero_name, real_name, short_bio, long_bio, image) VALUES ('$hero_name', '$real_name', '$short_bio', '$long_bio', '$imageNewName')";
-
+        
+        //Checks if the connection was successful.
         if(mysqli_query($connection,  $query)) {
             echo "data inserted successfully";
             // header("location:read.php")
