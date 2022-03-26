@@ -130,10 +130,10 @@ p4{
         
         
         <div class="menu">
-        <li><a href="/">Add hero</a></li>
-        <li><a href="/">Log in</a></li>
+        <li><a href="./display.php">Main page</a></li>
+        <li><a href="./login.html">Log in</a></li>
         <li class="nav">
-        <a href="/">Sign up</a>
+        <a href="./signup.html">Sign up</a>
         
         <ul class="dropdown">
         <li><a href="/">Dropdown 1 </a></li>
