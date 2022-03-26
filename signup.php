@@ -26,7 +26,7 @@ if(isset($_POST["submit"])) {
             <h3>You are registered successfully.</h3><br/>
             <p class='link'>Click here to <a href='login.php'>Login</a></p>
             </div>";
-  }
+          }
         
         else {
             echo "<h1> THE X-MEN GALLERY.</h1>";
@@ -61,14 +61,12 @@ if(isset($_POST["submit"])) {
    
 </section>
 
-<form class="form" method="post" name="signup">
+<form class="form" method="post" name="signup" action="signup.php">
 <div class="form-group">
         <h1 class="login-title text-success">Signup</h1>
         <div class="mb-3">
         <input type="text" class="form-control" name="username" placeholder="Username" >
         </div>
-        
-           
             <div class="mb-3">
             <input type="text" class="form-control" name="last_name" placeholder="Last name" >
             </div>
@@ -81,7 +79,7 @@ if(isset($_POST["submit"])) {
             </div>
         
      
-        <button type="submit" class="btn btn-primary">SIGNUP</button>
+        <button type="submit" class="btn btn-primary" name="submit">SIGNUP</button>
         <p class="link"><a href="signup.php">New Registration</a></p>
         </div>
   </form>

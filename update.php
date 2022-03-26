@@ -1,4 +1,5 @@
 <?php 
+    include "protected.php";
     include "connect_mysql.php";
     error_reporting(0);
     if(isset($_GET["updateId"])) {
@@ -130,7 +131,7 @@
     
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<footer>
+<!-- <footer>
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">X-Men</a>
@@ -153,6 +154,6 @@
       </div>
     </div>
   </nav>
-</footer>
+</footer> -->
 </body>
 </html>

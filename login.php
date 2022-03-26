@@ -23,9 +23,10 @@
         $user = mysqli_fetch_assoc($result);
         if ($rows == 1 && password_verify($userPassword, $user['password'])) {
             $_SESSION['username'] = $username;
-
+            echo "logged in";
+            echo "<script>window.location.href='read.php'</script>";
             // Redirect to user dashboard page
-            header("Location: display.php");
+            // header("Location: display.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>

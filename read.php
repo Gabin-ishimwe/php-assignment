@@ -39,9 +39,11 @@
   </nav>
     <main style="height:100vh;">
     <?php
+    include "protected.php";
     error_reporting(0);
     include "connect_mysql.php";
-
+    session_start();
+    $user_data = check_login($connection);
     $query = "SELECT * FROM heroes_table;";
 
     $result = mysqli_query($connection, $query);
@@ -56,7 +58,7 @@
             <div class='card' style='width: 18rem;'>
             <img src='uploads/$row[image]' name='image' class='card-img-top img-fluid'>
               <div class='card-body'>
-                <h5 class='card-title'>$row[hero_name].: $row[real_name]</h5>
+                <h5 class='card-title'>$row[hero_name] $row[real_name]</h5>
                 <p class='card-text'>$row[short_bio]</p>
               </div>
                <div class='card-body'>
@@ -78,7 +80,7 @@
     }
     else {
     ?>
-    <section class='fallback'>
+    <!-- <section class='fallback'>
         <div class='container'>
             <div class='card'>
                 
@@ -97,14 +99,14 @@ The character's creation and development occurred during the civil rights strugg
     </p>            
 </div>
 </div>
-    </section>
+    </section> -->
     <?php
     }
 
 
 ?>
 </main>
-<footer>
+<!-- <footer>
  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">X-Men</a>
@@ -127,7 +129,7 @@ The character's creation and development occurred during the civil rights strugg
       </div>
     </div>
   </nav>
-  </footer>
+  </footer> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
