@@ -2,6 +2,9 @@
     include "protected.php";
     include "connect_mysql.php";
     error_reporting(0);
+session_start();
+if(isset($_SESSION['username'])){
+
     if(isset($_GET["updateId"])) {
         $getid = $_GET["updateId"];
 
@@ -28,6 +31,10 @@
             echo "no such id";
         }
     }
+}
+  else {
+header("Location: login.php");
+  }
 ?>
 
 <!DOCTYPE html>
