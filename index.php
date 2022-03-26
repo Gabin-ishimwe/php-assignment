@@ -51,7 +51,7 @@
 SCHOOL OF THE GIFTED
 </p>
 <button class="btn btn-warning primary bold">
-  <a class="nav-link" href="dashboard.php"> VISIT US</a>       
+  <a class="nav-link" href="public.php"> VISIT US</a>       
   </button>
 </div>
 

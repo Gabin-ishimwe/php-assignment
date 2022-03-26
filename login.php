@@ -23,6 +23,7 @@
         $user = mysqli_fetch_assoc($result);
         if ($rows == 1 && password_verify($userPassword, $user['password'])) {
             $_SESSION['username'] = $username;
+            echo $_SESSION['username'];
             echo "logged in";
             echo "<script>window.location.href='dashboard.php'</script>";
             // Redirect to user dashboard page

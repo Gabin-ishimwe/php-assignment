@@ -39,11 +39,12 @@
   </nav>
     <main style="height:100vh;">
     <?php
+    
     include "protected.php";
     error_reporting(0);
+    echo $_SESSION['username'];
     include "connect_mysql.php";
-    session_start();
-    $user_data = check_login($connection);
+    // $user_data = check_login($connection);
     $query = "SELECT * FROM heroes_table;";
 
     $result = mysqli_query($connection, $query);

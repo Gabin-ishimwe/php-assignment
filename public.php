@@ -71,7 +71,7 @@
         while($row = mysqli_fetch_assoc($result)) {
 
 
-            echo "<div class='container'>
+            echo "<div class='container-fluid'>
             <div class='row row-cols-2'>
            <div class='col'>
             <div class ='cols-3'>
