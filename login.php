@@ -24,7 +24,7 @@
         if ($rows == 1 && password_verify($userPassword, $user['password'])) {
             $_SESSION['username'] = $username;
             echo "logged in";
-            echo "<script>window.location.href='read.php'</script>";
+            echo "<script>window.location.href='dashboard.php'</script>";
             // Redirect to user dashboard page
             // header("Location: display.php");
         } else {
@@ -32,7 +32,7 @@
                   <h3>Incorrect Username/password.</h3><br/>
                   <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
                   </div>
-                  <p class='link'>Click here to <a href='read.php'>Just view our X-Men</a>.</p>
+                  <p class='link'>Click here to <a href='dashboard.php'>Just view our X-Men</a>.</p>
                   </div>";
 
 
@@ -42,7 +42,7 @@
 ?>
  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">X-Men</a>
+      <a class="navbar-brand text-light" href="index.php">X-Men</a>
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,11 +53,11 @@
             <a class="nav-link active text-light" href="login.php">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="read.php">View X-Men</a>
+            <a class="nav-link active text-light" href="dashboard.php">View X-Men</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link active text-light" href="public.php" tabindex="-1" aria-disabled="true">Learn More</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

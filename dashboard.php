@@ -17,7 +17,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">X-Men</a>
+      <a class="navbar-brand text-light" href="index.php">X-Men</a>
       <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,7 +28,7 @@
             <a class="nav-link active text-light" href="login.php">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="read.php">View X-Men</a>
+            <a class="nav-link active text-light" href="dashboard.php">View X-Men</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-light" href="insert.php" tabindex="-1" aria-disabled="true">Add A new Hero</a>
@@ -120,7 +120,7 @@ The character's creation and development occurred during the civil rights strugg
             <a class="nav-link active text-light" href="login.php">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="read.php">View X-Men</a>
+            <a class="nav-link active text-light" href="dashboard.php">View X-Men</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-light" href="public.php" tabindex="-1" aria-disabled="true">Learn More</a>

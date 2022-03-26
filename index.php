@@ -30,18 +30,18 @@
             <a class="nav-link active text-light" href="login.php">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-light" href="read.php">View X-Men</a>
+            <a class="nav-link active text-light" href="public.php">View X-Men</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link active text-light" href="public.php" tabindex="-1" aria-disabled="true">Learn More</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 
 
-<section class="banner" style="background-image:url(styles/images/img/pictures/heroes1.jpg); background-size: cover; height: 100vh;">
+<section class="banner" style="background-image:url(uploads/heroe.png); background-size: cover; height: 100vh;">
 <!-- <img src="styles/images/img/pictures/heroes1.jpg" class="img-fluid" width="100%" alt="Banner Image of the X-Men"> -->
 <div class="container banner-text" >
 <h1 class="fs-1 light">
@@ -51,7 +51,7 @@
 SCHOOL OF THE GIFTED
 </p>
 <button class="btn btn-warning primary bold">
-  <a class="nav-link" href="read.php"> VISIT US</a>       
+  <a class="nav-link" href="dashboard.php"> VISIT US</a>       
   </button>
 </div>
 

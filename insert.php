@@ -62,7 +62,7 @@
         //Checks if the connection was successful.
         if(mysqli_query($connection,  $query)) {
             echo "data inserted successfully";
-            // header("location:read.php")
+            // header("location:dashboard.php")
         }
         else {
             echo "data not inserted ". mysqli_error($connection);
