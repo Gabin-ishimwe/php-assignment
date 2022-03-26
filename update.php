@@ -67,8 +67,8 @@
   <section class="background-image update">
    
 </section>
-
-    <form class="form-update" action="update.php" method="post" enctype="multipart/form-data">
+<div   style = "margin-left:32%; margin-top: 2%">
+    <form class="form-update" action="update.php" method="post" enctype="multipart/form-data" style = "background-color:rgba(255, 255, 0, 0.5); width:60%;">
   
             <h1>ADD NEW HERO</h1>
             <div class='form-group'>
@@ -104,7 +104,7 @@
             <button type="submit" name="submit"><p>SUBMIT</p></button>
         </div>
     </form>
-
+  </div>
     <?php
     include "image.php";
     if(isset($_POST["submit"])) {
