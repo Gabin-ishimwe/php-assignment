@@ -62,6 +62,14 @@
                <div class='card-body'>
                <p class='card-text'>$row[long_bio]</p>
               </div>
+               <div class='card-body'>
+               <div class='card-link'>
+               <button name='delete' class='btn btn-danger'><a href='delete.php?deleteId=$row[id]'>Delete</a></button>
+               </div>
+               <div class='card-link'>
+              <button name='update' class='btn btn-primary'><a href='update.php?updateId=$row[id]'>Update</a></button>
+              </div>
+              </div>
             </div>
             </div>
             </div>
