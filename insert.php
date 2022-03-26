@@ -52,8 +52,9 @@
     //importing other php files 
     include "connect_mysql.php";
     error_reporting(0);
+    session_start();
     include "image.php";
-    
+      if(isset($_SESSION['username'])){
     //Checking whether any information has been submitted.
     if(isset($_POST["submit"])) {
         // $id = $_POST["id"];
@@ -76,6 +77,10 @@
         // echo "$id<br>$hero_name<br> $real_name<br> $short_bio<br> $long_bio";
         // echo "id: " . $_POST["id"]. " hero name: ". $_POST["hero_name"];
     }
+      }
+      else {
+header("Location: login.php");
+  }
     ?>
 </body>
 
