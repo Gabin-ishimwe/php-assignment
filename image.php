@@ -12,6 +12,7 @@
         <button name="upload">submit</button>
     </form> -->
 
+    
     <?php 
     if(isset($_POST["submit"])) {
         $image = $_FILES["image"];
@@ -34,7 +35,7 @@
 
                 }
                 else {
-                    echo "image has large size!!";
+                    echo "image too large size!!";
                 }
             }
             else {

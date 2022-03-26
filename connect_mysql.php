@@ -8,19 +8,21 @@
 </head>
 <body>
     <?php
-    $dbHost = "127.0.0.1";
+    error_reporting(0);
+    $dbHost = "localhost";
     $dbUser = "root";
-    $dbPassword = "root123";
+    $dbPassword = "";
     $dbname = "heroes";
-
+    //Connecting to the database 
     $connection = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbname);
-
+    
+    //Checking to see if the database has been connected successful. 
     if($connection) {
         // echo "database connected";
     }
 
     else {
-        echo "database not connected";
+        // echo "database not connected";
     }
 
     ?>
